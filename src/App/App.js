@@ -3,11 +3,11 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 import connection from '../helpers/data/connection';
+import authRequests from '../helpers/data/authRequests';
 
 import Auth from '../components/pages/Auth/Auth';
 import MyNavbar from '../components/MyNavbar/MyNavbar';
 import './App.scss';
-import auth
 
 class App extends React.Component {
   state = {

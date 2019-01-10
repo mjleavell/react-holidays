@@ -14,6 +14,7 @@ import './MyNavbar.scss';
 class MyNavbar extends React.Component {
   static propTypes = {
     isAuthed: PropTypes.bool,
+    logoutClickEvent: PropTypes.func,
   }
 
   state = {
@@ -27,17 +28,17 @@ class MyNavbar extends React.Component {
   }
 
   render() {
-    const { isAuthed } = this.props;
+    const { isAuthed, logoutClickEvent } = this.props;
 
     return (
       <div className="my-navbar">
         <Navbar color="dark" dark expand="sm">
-          <NavbarBrand href="/home">React-Nutshell</NavbarBrand>
+          <NavbarBrand href="/home">React-Holidays</NavbarBrand>
           <NavbarToggler onClick={e => this.toggle(e)} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                { isAuthed ? <NavLink>Logout</NavLink> : '' }
+                { isAuthed ? <NavLink onClick={logoutClickEvent}>Logout</NavLink> : '' }
               </NavItem>
             </Nav>
           </Collapse>
