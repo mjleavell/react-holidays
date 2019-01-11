@@ -14,6 +14,13 @@ import authRequests from '../helpers/data/authRequests';
 import Auth from '../components/pages/Auth/Auth';
 import MyNavbar from '../components/MyNavbar/MyNavbar';
 import Holidays from '../components/pages/Holidays/Holidays';
+import Friends from '../components/pages/Friends/Friends';
+import NewHoliday from '../components/pages/NewHoliday/NewHoliday';
+import HolidayDetail from '../components/pages/HolidayDetail/HolidayDetail';
+import EditHoliday from '../components/pages/EditHoliday/EditHoliday';
+import NewFriend from '../components/pages/NewFriend/NewFriend';
+import EditFriend from '../components/pages/EditFriend/EditFriend';
+import HolidayFriends from '../components/pages/HolidayFriends/HolidayFriends';
 import './App.scss';
 
 const PublicRoute = ({ component: Component, authed, ...rest }) => {
@@ -59,7 +66,10 @@ class App extends React.Component {
   }
 
   render() {
-    const { authed, pendingUser } = this.state;
+    const {
+      authed,
+      pendingUser,
+    } = this.state;
 
     const logoutClickEvent = () => {
       authRequests.logoutUser();
@@ -80,6 +90,13 @@ class App extends React.Component {
                 <Switch>
                   <PrivateRoute path='/' exact component={Holidays} authed={authed} />
                   <PrivateRoute path='/holidays' component={Holidays} authed={authed} />
+                  <PrivateRoute path='/holidays/new' component={NewHoliday} authed={authed} />
+                  <PrivateRoute path='/holidays/:id' component={HolidayDetail} authed={authed} />
+                  <PrivateRoute path='/holidays/:id/edit' component={EditHoliday} authed={authed} />
+                  <PrivateRoute path='/holidays/:id/friends' component={HolidayFriends} authed={authed} />
+                  <PrivateRoute path='/friends' component={Friends} authed={authed} />
+                  <PrivateRoute path='/friends/new' component={NewFriend} authed={authed} />
+                  <PrivateRoute path='/friends/:id/edit' component={EditFriend} authed={authed} />
                   <PublicRoute path='/auth' component={Auth} authed={authed} />
                 </Switch>
               </div>
