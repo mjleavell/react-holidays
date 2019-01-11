@@ -4,8 +4,10 @@ import { Button } from 'reactstrap';
 import './Friends.scss';
 
 class Friends extends React.Component {
-  newFriendView = () => {
-    this.props.history.push('/friends/new');
+  editFriendView = (e) => {
+    e.preventDefault();
+    const getId = 'friend1345';
+    this.props.history.push(`/friends/${getId}/edit`);
   };
 
   render() {
@@ -15,8 +17,9 @@ class Friends extends React.Component {
           color="light"
           size="small"
           className="friends-btn"
-          onClick={this.newFriendView}
-        >Add Friend</Button>
+          id="friend1345"
+          onClick={this.editFriendView}
+        >Edit Friend</Button>
       </div>
     );
   }

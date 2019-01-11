@@ -88,16 +88,56 @@ class App extends React.Component {
             <div className="container">
               <div className="row">
                 <Switch>
-                  <PrivateRoute path='/' exact component={Holidays} authed={authed} />
-                  <PrivateRoute path='/holidays' component={Holidays} authed={authed} />
-                  <PrivateRoute path='/holidays/new' component={NewHoliday} authed={authed} />
-                  <PrivateRoute path='/holidays/:id' component={HolidayDetail} authed={authed} />
-                  <PrivateRoute path='/holidays/:id/edit' component={EditHoliday} authed={authed} />
-                  <PrivateRoute path='/holidays/:id/friends' component={HolidayFriends} authed={authed} />
-                  <PrivateRoute path='/friends' component={Friends} authed={authed} />
-                  <PrivateRoute path='/friends/new' component={NewFriend} authed={authed} />
-                  <PrivateRoute path='/friends/:id/edit' component={EditFriend} authed={authed} />
-                  <PublicRoute path='/auth' component={Auth} authed={authed} />
+                  <PrivateRoute
+                    exact path='/'
+                    component={Holidays}
+                    authed={authed}
+                  />
+                  <PrivateRoute
+                    path='/holidays/new'
+                    exact component={NewHoliday}
+                    authed={authed}
+                  />
+                  <PrivateRoute
+                    path='/holidays/:id/edit'
+                    component={EditHoliday}
+                    authed={authed}
+                  />
+                  <PrivateRoute
+                    path='/holidays/:id/friends'
+                    component={HolidayFriends}
+                    authed={authed}
+                  />
+                  <PrivateRoute
+                    path='/holidays/:id'
+                    component={HolidayDetail}
+                    authed={authed}
+                  />
+                  <PrivateRoute
+                    path='/holidays'
+                    component={Holidays}
+                    authed={authed}
+                  />
+                  <PrivateRoute
+                    path='/friends/new'
+                    exact component={NewFriend}
+                    authed={authed}
+                  />
+                  <PrivateRoute
+                    path='/friends/:id/edit'
+                    component={EditFriend}
+                    authed={authed}
+                  />
+                  <PrivateRoute
+                    path='/friends'
+                    component={Friends}
+                    authed={authed}
+                  />
+                  <PublicRoute
+                    path='/auth'
+                    component={Auth}
+                    authed={authed}
+                  />
                 </Switch>
               </div>
             </div>
