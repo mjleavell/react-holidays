@@ -15,7 +15,7 @@
     "email": "lee@princess.com",
     "relationship": "sister",
     "isAvoiding": false,
-    "uid": "7wtYOqGGEtS7dx6VAby70Efklkk2"
+    "uid": "aS4uhCplokPqOn5wIUkWHSkeCo73"
   },
   "friend3": {
     "name": "Neely",
@@ -24,7 +24,7 @@
     "email": "neely@twinning.com",
     "relationship": "twin sister",
     "isAvoiding": false,
-    "uid": "7wtYOqGGEtS7dx6VAby70Efklkk2"
+    "uid": "aS4uhCplokPqOn5wIUkWHSkeCo73"
   },
   "friend4": {
     "name": "Charlotte",
@@ -33,7 +33,7 @@
     "email": "caroline@gmail.com",
     "relationship": "friend",
     "isAvoiding": true,
-    "uid": "7wtYOqGGEtS7dx6VAby70Efklkk2"
+    "uid": "aS4uhCplokPqOn5wIUkWHSkeCo73"
   },
   "friend5": {
     "name": "Kyle",
@@ -42,7 +42,7 @@
     "email": "kyle@me.com",
     "relationship": "friend",
     "isAvoiding": false,
-    "uid": "7wtYOqGGEtS7dx6VAby70Efklkk2"
+    "uid": "aS4uhCplokPqOn5wIUkWHSkeCo73"
   },
   "friend6": {
     "name": "John",
@@ -51,7 +51,7 @@
     "email": "johnny@gmail.com",
     "relationship": "friend",
     "isAvoiding": false,
-    "uid": "7wtYOqGGEtS7dx6VAby70Efklkk2"
+    "uid": "aS4uhCplokPqOn5wIUkWHSkeCo73"
   },
   "friend7": {
     "name": "Nate",
@@ -60,7 +60,7 @@
     "email": "nate@gmail.com",
     "relationship": "friend",
     "isAvoiding": false,
-    "uid": "7wtYOqGGEtS7dx6VAby70Efklkk2"
+    "uid": "aS4uhCplokPqOn5wIUkWHSkeCo73"
   },
   "friend8": {
     "name": "George",
@@ -69,6 +69,6 @@
     "email": "george@george.com",
     "relationship": "father",
     "isAvoiding": false,
-    "uid": "7wtYOqGGEtS7dx6VAby70Efklkk2"
+    "uid": "aS4uhCplokPqOn5wIUkWHSkeCo73"
   }
 }
